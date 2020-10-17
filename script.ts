@@ -18,8 +18,9 @@
     render() {
         return `
         <div class="card-deck-row text-center col-sm-11 col-md-5 bg-dark col-lg.-2 m-4 p-1 justify content-between w-100 rounded" id="attracions">
-                <img src="${this.img}" class="card-img-top card-img-fluid my-2 d-none" alt="...">
-                    <div class="card-body">
+                
+                    <div class="card-body text-white">
+                    <img src="${this.img}" class="card-img-top card-img-fluid my-2" alt="...">
                         <h5 class="card-title mb-2">${this.place}</h5>
                         <p class="address">${this.address}</p>
                         <p class="zipcode">${this.zipcode}</p>
@@ -43,8 +44,9 @@
         render() {
         return `
         <div class="card-deck-row text-center col-sm-11 col-md-5 bg-dark col-lg.-2 m-4 p-1 justify content-between w-100 rounded" id="attracions">
-                <img src="${this.img}" class="card-img-top card-img-fluid my-2 d-none" alt="...">
-                    <div class="card-body">
+                
+                    <div class="card-body text-white">
+                    <img src="${this.img}" class="card-img-top card-img-fluid my-2 " alt="...">
                         <h5 class="card-title mb-2">${this.place}</h5>
                         <p class="address">${this.address}</p>
                         <p class="zipcode">${this.zipcode}</p>
@@ -76,8 +78,9 @@
     render() {
                     return `
                     <div class="card-deck-row text-center col-sm-11 col-md-5 bg-dark col-lg.-2 m-4 p-1 justify content-between w-100 rounded" id="attracions">
-                            <img src="${this.img}" class="card-img-top card-img-fluid my-2 d-none" alt="...">
-                                <div class="card-body">
+                            
+                                <div class="card-body text-white">
+                                    <img src="${this.img}" class="card-img-top card-img-fluid my-2" alt="...">
                                     <h5 class="card-title mb-2">${this.place}</h5>
                                     <p class="address">${this.address}</p>
                                     <p class="zipcode">${this.zipcode}</p>
@@ -93,12 +96,12 @@
     } 
 
 
-var church = new Travel("St. Charles Church","Karlsplatz 1", "1010 Vienna", "img/karlskirch.jpg");
+var church = new Travel("St. Charles Church","Karlsplatz 1", "1010 Vienna", "img/karlskirche.jpg");
 var zoo = new Travel("Zoo Vienna", "Maxingstraße 13b", "1130 Vienna", "img/zoo.jpg");
 var apple = new Restaurant("Lemon Leaf Thai Restaurant", "Kettenbrückengass 19", "1050 Vienna", "img/lemonleaf.png", "Thai kitchen", "www.lemonleaf.at");
 var center = new Restaurant("Sixta Restaurant", "Schönbrunner Straße 21", "1050 Vienna", "img/sixta.png", "Traditional food", "www.sixta-restaurant.at");
-var artist = new Show("img/Kristofferson.jpg","Wiener Stadthalle,HAlle F", "Roland Rainer Platz 1", "1150 Vienna","Kris Kristofferson", "Thursday 15.11.2021", "20:00","58.50EUR", "www.kriskristofferson.com");
-var star = new Show("img/lenny.jpg", "Wiener Stadthalle, Halle D", "Roland Rainer Platz 1","1150 Vienna", "Lenny Kravitz", "Saturday 09.12.2029", "19:30", "47.80EUR", "www.lennykravitz.com");
+var artist = new Show("Wiener Stadthalle,HAlle F", "1150 Vienna", "Roland Rainer Platz 1","img/Kristofferson.jpg","Kris Kristofferson", "Thursday 15.11.2021","20:00","58.50EUR", "www.kriskristofferson.com");
+var star = new Show("Wiener Stadthalle, Halle D", "1150 Vienna", "Roland Rainer Platz 1","img/lenny.jpg",   "Lenny Kravitz", "Saturday 09.12.2029", "19:30", "47.80EUR", "www.lennykravitz.com");
 
 $(document).ready(function(){
     for(let i in attractionsArr){

@@ -21,7 +21,7 @@ var Travel = /** @class */ (function () {
         attractionsArr.push(this);
     }
     Travel.prototype.render = function () {
-        return "\n        <div class=\"card-deck-row text-center col-sm-11 col-md-5 bg-dark col-lg.-2 m-4 p-1 justify content-between w-100 rounded\" id=\"attracions\">\n                <img src=\"" + this.img + "\" class=\"card-img-top card-img-fluid my-2 d-none\" alt=\"...\">\n                    <div class=\"card-body\">\n                        <h5 class=\"card-title mb-2\">" + this.place + "</h5>\n                        <p class=\"address\">" + this.address + "</p>\n                        <p class=\"zipcode\">" + this.zipcode + "</p>\n                    </div>\n        </div>";
+        return "\n        <div class=\"card-deck-row text-center col-sm-11 col-md-5 bg-dark col-lg.-2 m-4 p-1 justify content-between w-100 rounded\" id=\"attracions\">\n                \n                    <div class=\"card-body text-white\">\n                    <img src=\"" + this.img + "\" class=\"card-img-top card-img-fluid my-2\" alt=\"...\">\n                        <h5 class=\"card-title mb-2\">" + this.place + "</h5>\n                        <p class=\"address\">" + this.address + "</p>\n                        <p class=\"zipcode\">" + this.zipcode + "</p>\n                    </div>\n        </div>";
     };
     return Travel;
 }());
@@ -34,7 +34,7 @@ var Restaurant = /** @class */ (function (_super) {
         return _this;
     }
     Restaurant.prototype.render = function () {
-        return "\n        <div class=\"card-deck-row text-center col-sm-11 col-md-5 bg-dark col-lg.-2 m-4 p-1 justify content-between w-100 rounded\" id=\"attracions\">\n                <img src=\"" + this.img + "\" class=\"card-img-top card-img-fluid my-2 d-none\" alt=\"...\">\n                    <div class=\"card-body\">\n                        <h5 class=\"card-title mb-2\">" + this.place + "</h5>\n                        <p class=\"address\">" + this.address + "</p>\n                        <p class=\"zipcode\">" + this.zipcode + "</p>\n                        <p class=\"food\">" + this.food + "</p>\n                        <a href=\"" + this.website + "\" class=\"website\">Click for the website</p>\n\n                    </div>\n        </div>";
+        return "\n        <div class=\"card-deck-row text-center col-sm-11 col-md-5 bg-dark col-lg.-2 m-4 p-1 justify content-between w-100 rounded\" id=\"attracions\">\n                \n                    <div class=\"card-body text-white\">\n                    <img src=\"" + this.img + "\" class=\"card-img-top card-img-fluid my-2 \" alt=\"...\">\n                        <h5 class=\"card-title mb-2\">" + this.place + "</h5>\n                        <p class=\"address\">" + this.address + "</p>\n                        <p class=\"zipcode\">" + this.zipcode + "</p>\n                        <p class=\"food\">" + this.food + "</p>\n                        <a href=\"" + this.website + "\" class=\"website\">Click for the website</p>\n\n                    </div>\n        </div>";
     };
     return Restaurant;
 }(Travel));
@@ -50,16 +50,16 @@ var Show = /** @class */ (function (_super) {
         return _this;
     }
     Show.prototype.render = function () {
-        return "\n                    <div class=\"card-deck-row text-center col-sm-11 col-md-5 bg-dark col-lg.-2 m-4 p-1 justify content-between w-100 rounded\" id=\"attracions\">\n                            <img src=\"" + this.img + "\" class=\"card-img-top card-img-fluid my-2 d-none\" alt=\"...\">\n                                <div class=\"card-body\">\n                                    <h5 class=\"card-title mb-2\">" + this.place + "</h5>\n                                    <p class=\"address\">" + this.address + "</p>\n                                    <p class=\"zipcode\">" + this.zipcode + "</p>\n                                    <p class=\"eventName\">" + this.eventName + "</p>\n                                    <p class=\"eventDate\">" + this.eventDate + "</p>\n                                    <p class=\"eventTime\">" + this.eventTime + "</p>\n                                    <p class=\"eventPrice\">" + this.price + "</p>\n                                    <a href=\"" + this.website + "\" class=\"website\">Click for the website</p>\n            \n                                </div>\n                    </div>";
+        return "\n                    <div class=\"card-deck-row text-center col-sm-11 col-md-5 bg-dark col-lg.-2 m-4 p-1 justify content-between w-100 rounded\" id=\"attracions\">\n                            \n                                <div class=\"card-body text-white\">\n                                    <img src=\"" + this.img + "\" class=\"card-img-top card-img-fluid my-2\" alt=\"...\">\n                                    <h5 class=\"card-title mb-2\">" + this.place + "</h5>\n                                    <p class=\"address\">" + this.address + "</p>\n                                    <p class=\"zipcode\">" + this.zipcode + "</p>\n                                    <p class=\"eventName\">" + this.eventName + "</p>\n                                    <p class=\"eventDate\">" + this.eventDate + "</p>\n                                    <p class=\"eventTime\">" + this.eventTime + "</p>\n                                    <p class=\"eventPrice\">" + this.price + "</p>\n                                    <a href=\"" + this.website + "\" class=\"website\">Click for the website</p>\n            \n                                </div>\n                    </div>";
     };
     return Show;
-}(travel));
-var church = new Travel("St. Charles Church", "Karlsplatz 1", "1010 Vienna", "img/karlskirch.jpg");
+}(Travel));
+var church = new Travel("St. Charles Church", "Karlsplatz 1", "1010 Vienna", "img/karlskirche.jpg");
 var zoo = new Travel("Zoo Vienna", "Maxingstraße 13b", "1130 Vienna", "img/zoo.jpg");
 var apple = new Restaurant("Lemon Leaf Thai Restaurant", "Kettenbrückengass 19", "1050 Vienna", "img/lemonleaf.png", "Thai kitchen", "www.lemonleaf.at");
 var center = new Restaurant("Sixta Restaurant", "Schönbrunner Straße 21", "1050 Vienna", "img/sixta.png", "Traditional food", "www.sixta-restaurant.at");
-var artist = new Show("img/Kristofferson.jpg", "Wiener Stadthalle,HAlle F", "Roland Rainer Platz 1", "1150 Vienna", "Kris Kristofferson", "Thursday 15.11.2021", "20:00", "58.50EUR", "www.kriskristofferson.com");
-var star = new Show("img/lenny.jpg", "Wiener Stadthalle, Halle D", "Roland Rainer Platz 1", "1150 Vienna", "Lenny Kravitz", "Saturday 09.12.2029", "19:30", "47.80EUR", "www.lennykravitz.com");
+var artist = new Show("Wiener Stadthalle,HAlle F", "1150 Vienna", "Roland Rainer Platz 1", "img/Kristofferson.jpg", "Kris Kristofferson", "Thursday 15.11.2021", "20:00", "58.50EUR", "www.kriskristofferson.com");
+var star = new Show("Wiener Stadthalle, Halle D", "1150 Vienna", "Roland Rainer Platz 1", "img/lenny.jpg", "Lenny Kravitz", "Saturday 09.12.2029", "19:30", "47.80EUR", "www.lennykravitz.com");
 $(document).ready(function () {
     for (var i in attractionsArr) {
         document.getElementById("attractions").innerHTML += attractionsArr[i].render();
